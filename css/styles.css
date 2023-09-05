@@ -12,6 +12,8 @@
   --white-background:#fff;
   --dairy-modal-background:#fcfcfc;
 }
+/*base*/
+
 body {
   color:var(--slate-text);
   background-color:var(--white-background);
@@ -38,16 +40,20 @@ img{
 }
 
 ul{
-margin-top: 0;
-margin-bottom: 0;
+margin: 0;
 padding-left: 0;
 list-style: none;
 }
 /*section header*/
 .head.container{
   display: flex;
+   
+
   
 
+}
+.header{
+  border-bottom: 1px solid var(--corneflower-accent);
 }
 .nav-baskiet{
   display: flex;
@@ -94,8 +100,7 @@ font-style: normal;
   display: flex;
   gap: 40px;
   
-  margin-top: 0;
-  margin-bottom: 0;
+ 
   padding: 24px 0;
 
 }
@@ -118,7 +123,7 @@ color: var(--navy-blue-dark);
 /*section hero*/
 .hero{
 
-max-width: 1440px;
+
 padding: 188px 0;
 margin-left: auto;
 margin-right: auto;
@@ -145,24 +150,22 @@ color: var(--white-background);
 
 .button-primary{
   display: block;
+  padding: 16px 32px;
+  cursor: pointer;
   margin: auto;
+
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 16px 32px;
-
-
-  cursor: pointer;
   background-color: var(--iris-primary-brand);
   color: var(--white-background);
+
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-  
-
-  
-  
+  letter-spacing: 0.04em; 
 }
+
+
 .button-primary:hover,
 .button-primary:focus{
   background-color: var(--ocean-pressed-state);
@@ -243,6 +246,7 @@ color: var(--navy-blue-dark);
 }
 .team-item{
   display: flex;
+  width: calc((100%-72px)/4);
   flex-direction: column;
   gap: 32px;
 
@@ -290,6 +294,13 @@ color: var(--navy-blue-dark);
 /*section footer*/
 .footer{
   background-color: var(--navy-blue-dark);
+  padding: 100px 0;
+}
+.footer-cont{
+  
+  max-width: 264px;
+  
+  
 }
 .footer-logo{
   font-family:"Raleway" ,sans-serif;
@@ -300,16 +311,21 @@ color: var(--navy-blue-dark);
   
   color: var(--cloud-light);
   }
+.logo.link.footers{
+  display: block;
+  margin-bottom: 17.5px;
+}
 .foot.container{
 
 
 
 }
 .footer-text{
+margin: 0;
+
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
-
 color: var(--cloud-light);
 
 }
