@@ -57,12 +57,14 @@ list-style: none;
 }
 .nav-baskiet{
   display: flex;
-  gap: 76px;
+  
   
   align-items: center;
 }
 
 .logo.link{
+ margin-right: 76px;
+
  font-family:"Raleway",sans-serif ;
  font-weight:700;
  font-size:18px;
@@ -90,6 +92,7 @@ list-style: none;
 }
 .site-nav{
   margin-right: 332px;
+  padding: 24px 0;
   
 }
 .address{
@@ -99,10 +102,7 @@ font-style: normal;
 .site-nav{
   display: flex;
   gap: 40px;
-  
- 
   padding: 24px 0;
-
 }
 
 .addres .link{
@@ -189,17 +189,15 @@ color: var(--white-background);
 
 .feature-list{
 display: flex;
-justify-content: space-between;
-
-
-
+ gap: 24px;
 }
+
 .feature-item{
 display: flex;
 width: 264px;
 flex-direction: column;
 align-items: flex-start;
-gap: 8px;
+
 }
 .section-text{
 margin-top: 0;
@@ -213,7 +211,7 @@ letter-spacing:  0.02em;
 }
 .title{
 margin-top: 0;
-margin-bottom: 0;
+margin-bottom:8px;
 font-size: 20px;
 font-weight: 500;
 line-height: 24px;
@@ -241,15 +239,15 @@ color: var(--navy-blue-dark);
 }
 .team-list{
   display: flex;
-  justify-content: space-between;
+   gap: 24px;
   
 
 }
 .team-item{
   display: flex;
-  width: calc((100%-72px)/4);
+  width:calc((100%-72px)/4);
   flex-direction: column;
-  gap: 32px;
+  
 
   background-color: var(--white-background);
   border-radius: 0px 0px 4px 4px;
@@ -260,8 +258,7 @@ color: var(--navy-blue-dark);
 .teamd{
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-bottom: 32px;
+  padding: 32px 0;
    
    text-align: center;
 
@@ -280,14 +277,12 @@ color: var(--navy-blue-dark);
   gap: 32px;
   width: calc((100% - 48px) / 3);
   align-items: flex-start;
-  border: 1px solid var(--corneflower-accent);
+  
 
 }
 .portfoliod{
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
-  
+  padding: 32px 16px;
+  border: 1px solid var(--corneflower-accent);
    
   
 }
@@ -299,7 +294,7 @@ color: var(--navy-blue-dark);
 }
 .footer-cont{
   
-  max-width: 264px;
+  
   
   
 }
@@ -313,8 +308,8 @@ color: var(--navy-blue-dark);
   color: var(--cloud-light);
   }
 .logo.link.footers{
-  display: block;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .foot.container{
 
@@ -323,6 +318,7 @@ color: var(--navy-blue-dark);
 }
 .footer-text{
 margin: 0;
+max-width: 264px;
 
 font-size: 16px;
 line-height: 24px;
